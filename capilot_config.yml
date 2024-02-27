@@ -1,3 +1,16 @@
+# Секция настройки обработки запроса RAG Fusion.
+query_rag_fusion:
+  global_is_rag_fusion: True
+  global_rag_metod_rerank: "RRF"                 # "RRF", "Cross-Encoder"
+  global_rag_primary_llm: "gpt-3.5-turbo-1106"   # "gpt-3.5-turbo-1106", "gpt-4-1106-preview"
+  global_rag_second_llm: "gpt-3.5-turbo-1106"    # "gpt-3.5-turbo-1106", "gpt-4-1106-preview"
+  global_rag_number_of_additional_query: 3
+  global_rag_number_docs_of_additional_query: 3
+  global_rag_number_docs_of_final_query: 3
+  global_rag_reorder: False
+  
+
+
 directories:
   data_directory: data/docs
   data_directory_2: data/docs_2
